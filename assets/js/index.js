@@ -45,19 +45,19 @@
              const sonidoAnimal = animales.find((animal) => animal.name === animalSelect.value).sonido;
 
              if (animalSelect.value == "Leon") {
-                 newAnimal = new Leon(animalSelect.value, edadId.value, `/assets/imgs/${imagenAnimal}`, comentariosId.value, `/assets/sounds/${sonidoAnimal}`);
+                 newAnimal = new Leon(animalSelect.value, edadId.value, `/Animales-Salvajes/tree/master/assets/imgs/${imagenAnimal}`, comentariosId.value, `/Animales-Salvajes/tree/master/assets/sounds/${sonidoAnimal}`);
              }
              if (animalSelect.value == "Lobo") {
-                 newAnimal = new Lobo(animalSelect.value, edadId.value, `/assets/imgs/${imagenAnimal}`, comentariosId.value, `/assets/sounds/${sonidoAnimal}`);
+                 newAnimal = new Lobo(animalSelect.value, edadId.value, `/Animales-Salvajes/tree/master/assets/imgs/${imagenAnimal}`, comentariosId.value, `/Animales-Salvajes/tree/master/assets/sounds/${sonidoAnimal}`);
              }
              if (animalSelect.value == "Oso") {
-                 newAnimal = new Oso(animalSelect.value, edadId.value, `/assets/imgs/${imagenAnimal}`, comentariosId.value, `/assets/sounds/${sonidoAnimal}`);
+                 newAnimal = new Oso(animalSelect.value, edadId.value, `/Animales-Salvajes/tree/master/assets/imgs/${imagenAnimal}`, comentariosId.value, `/Animales-Salvajes/tree/master/assets/sounds/${sonidoAnimal}`);
              }
              if (animalSelect.value == "Serpiente") {
-                 newAnimal = new Serpiente(animalSelect.value, edadId.value, `/assets/imgs/${imagenAnimal}`, comentariosId.value, `/assets/sounds/${sonidoAnimal}`);
+                 newAnimal = new Serpiente(animalSelect.value, edadId.value, `/Animales-Salvajes/tree/master/assets/imgs/${imagenAnimal}`, comentariosId.value, `/Animales-Salvajes/tree/master/assets/sounds/${sonidoAnimal}`);
              }
              if (animalSelect.value == "Aguila") {
-                 newAnimal = new Aguila(animalSelect.value, edadId.value, `/assets/imgs/${imagenAnimal}`, comentariosId.value, `/assets/sounds/${sonidoAnimal}`);
+                 newAnimal = new Aguila(animalSelect.value, edadId.value, `/Animales-Salvajes/tree/master/assets/imgs/${imagenAnimal}`, comentariosId.value, `/Animales-Salvajes/tree/master/assets/sounds/${sonidoAnimal}`);
              }
 
              arrayAnimales.push(newAnimal);
@@ -92,7 +92,7 @@
      edadId.selectedIndex = 0;
      comentariosId.value = "";
      document.querySelector("#preview").innerHTML = "";
-     document.querySelector("#preview").style.backgroundImage = "assets/imgs/lion.svg";
+     document.querySelector("#preview").style.backgroundImage = "/Animales-Salvajes/tree/master/assets/imgs/lion.svg";
  };
 
  window.mostrarModal = (index) => { // muestra modal con el animal seleccionados a traves del index del arreglo
@@ -115,6 +115,6 @@
          const { animales } = await listaAnimales.getData();
          const nombreAnimal = Animal.target.value;
          const imagen = animales.find((data) => data.name == nombreAnimal).imagen;
-         previewId.innerHTML = `<img class="previewAnimal"  src="/assets/imgs/${imagen}" />`;
+         previewId.innerHTML = `<img class="previewAnimal"  src="/Animales-Salvajes/tree/master/assets/imgs/${imagen}" />`;
      });
  })();
