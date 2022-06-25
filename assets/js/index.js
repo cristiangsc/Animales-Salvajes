@@ -22,7 +22,7 @@
 
  let listaAnimales = (() => { // función asincronica que recupera los animales desde el archivo json
      const getData = async() => {
-         const respuesta = await fetch("http://127.0.0.1:5500/animales.json");
+         const respuesta = await fetch("animales.json");
          const datos = await respuesta.json();
          return datos;
      };
